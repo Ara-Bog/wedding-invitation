@@ -1,7 +1,7 @@
 {
   "name": "event",
   "version": "0.1.0",
-  "homepage": "https://ara-bog.github.io/react-gh-pages",
+  "homepage": "https://ara-bog.github.io/wedding-invitation",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
