@@ -1,38 +1,94 @@
-.App {
+html {
+  font-size: 220px;
+  line-height: 200px;
+}
+
+.wrap {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.54rem;
+  line-height: 145px;
+  color: #4F72AA;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  letter-spacing: 10px;
+  color: #383838;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-main {
+  width: max-content;
+  max-width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  align-items: center;
+  background-color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-main_title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  position: relative;
+  margin-top: 7%;
 }
 
-.App-link {
-  color: #61dafb;
+.card-main_title span {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1rem;
+  letter-spacing: 10px;
+  color: #4F72AA80;
+  opacity: 0.5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-main_title span::before,
+.card-main_title span::after {
+  content: "";
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  background-color: #4F72AA;
+  border-radius: 63px;
+  -webkit-border-radius: 63px;
+  -moz-border-radius: 63px;
+  -ms-border-radius: 63px;
+  -o-border-radius: 63px;
+  width: 36%;
+  height: 4px;
+  opacity: 0.5;
+}
+
+.card-main_title span::before {
+  left: unset;
+  right: 5%;
+}
+
+.card-main_content {
+  display: flex;
+  margin-top: 6%;
+}
+
+.card-main_content img {
+  object-fit: contain;
+  width: calc(69% - 30px);
+  margin-left: 31%;
+  margin-right: 30px;
+  margin-bottom: 22px;
 }

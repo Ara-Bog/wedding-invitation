@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'TT Livret Display Trl';
+    src: url('./fonts/TTLivretDisplayTrl-BdIt.woff2') format('woff2'),
+        url('./fonts/TTLivretDisplayTrl-BdIt.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Livret Display Trl';
+    src: url('./fonts/TTLivretDisplayTrl-DmBd.woff2') format('woff2'),
+        url('./fonts/TTLivretDisplayTrl-DmBd.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Livret Display Trl';
+    src: url('./fonts/TTLivretDisplayTrl-Bd.woff2') format('woff2'),
+        url('./fonts/TTLivretDisplayTrl-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Livret Display Trl';
+    src: url('./fonts/TTLivretDisplayTrl-It.woff2') format('woff2'),
+        url('./fonts/TTLivretDisplayTrl-It.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Livret Display Trl';
+    src: url('./fonts/TTLivretDisplayTrl-DmBdIt.woff2') format('woff2'),
+        url('./fonts/TTLivretDisplayTrl-DmBdIt.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Livret Display Trl';
+    src: url('./fonts/TTLivretDisplayTrl-LtIt.woff2') format('woff2'),
+        url('./fonts/TTLivretDisplayTrl-LtIt.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Livret Display Trl';
+    src: url('./fonts/TTLivretDisplayTrl-MdIt.woff2') format('woff2'),
+        url('./fonts/TTLivretDisplayTrl-MdIt.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Livret Display Trl';
+    src: url('./fonts/TTLivretDisplayTrl-Md.woff2') format('woff2'),
+        url('./fonts/TTLivretDisplayTrl-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Livret Display Trl';
+    src: url('./fonts/TTLivretDisplayTrl-Lt.woff2') format('woff2'),
+        url('./fonts/TTLivretDisplayTrl-Lt.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TT Livret Display Trl';
+    src: url('./fonts/TTLivretDisplayTrl-Rg.woff2') format('woff2'),
+        url('./fonts/TTLivretDisplayTrl-Rg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('./fonts/CormorantGaramond-Medium.woff2') format('woff2'),
+        url('./fonts/CormorantGaramond-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('./fonts/CormorantGaramond-SemiBoldItalic.woff2') format('woff2'),
+        url('./fonts/CormorantGaramond-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('./fonts/CormorantGaramond-MediumItalic.woff2') format('woff2'),
+        url('./fonts/CormorantGaramond-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('./fonts/CormorantGaramond-LightItalic.woff2') format('woff2'),
+        url('./fonts/CormorantGaramond-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('./fonts/CormorantGaramond-Regular.woff2') format('woff2'),
+        url('./fonts/CormorantGaramond-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('./fonts/CormorantGaramond-Light.woff2') format('woff2'),
+        url('./fonts/CormorantGaramond-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('./fonts/CormorantGaramond-Bold.woff2') format('woff2'),
+        url('./fonts/CormorantGaramond-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('./fonts/CormorantGaramond-BoldItalic.woff2') format('woff2'),
+        url('./fonts/CormorantGaramond-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('./fonts/CormorantGaramond-Italic.woff2') format('woff2'),
+        url('./fonts/CormorantGaramond-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('./fonts/CormorantGaramond-SemiBold.woff2') format('woff2'),
+        url('./fonts/CormorantGaramond-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
