@@ -1,64 +1,39 @@
-import lighthouse from "./img/lighthouse.png";
-import wave from "./img/wave.png";
-// import bird from "./img/vorobei.jpg";
-import goo from "./img/goo.png";
+import mainPage from "./img/mainPage.jpg";
+import contentPage from "./img/contentPage.jpg";
+import mainDima from "./img/mainDima.jpg";
+import contentDima from "./img/contentDima.jpg";
+import contentMisha from "./img/contentMisha.jpg";
 
 import "./App.css";
 import { useState } from "react";
 import ReactCardFlip from "react-card-flip";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
 
-function App() {
+function MishaPage() {
   const [flippedCard, setFlipp] = useState(false);
   const [checkClick, setCheck] = useState(false);
-
+  function changeVh() {
+    document.documentElement.style.setProperty(
+      "--vh",
+      `${window.innerHeight}px`
+    );
+  }
+  changeVh();
+  window.addEventListener("resize", changeVh);
   return (
-    <div className="wrap">
+    <>
       <ReactCardFlip isFlipped={flippedCard}>
         <div
-          className="card-main"
+          className="cardBlock"
           onClick={() => {
             setFlipp(true);
             setCheck(true);
           }}
         >
-          <h3 className="h3_withPadd">Пригласительный билет на свадьбу</h3>
-          <div className="card-main_title">
-            <h1>МИХАИЛА</h1>
-            <span>&</span>
-            <h1>ЕЛИЗАВЕТЫ</h1>
-          </div>
-          <div className="card-main_content">
-            <img src={lighthouse} alt="lighthouse" />
-          </div>
+          <img src={mainPage} alt="title invite" />
         </div>
-        <div className="card-content" onClick={() => setFlipp(false)}>
-          <h3 className="h3_withPadd">Дорогие друзья и родные!</h3>
-          <p>
-            Если вы получили это приглашение, то мы ждем Вас на нашем главном
-            событии - свадебном торжестве
-          </p>
-          <img className="card-content_wave" src={wave} alt="wave" />
-          <div className="card-content_dates">
-            <div className="card-content_dates_item">
-              <span>регистрация новой семьи</span>
-              <h2>17.06.23</h2>
-              <p className="card-content_dates_item-time">13:00</p>
-              <p className="card-content_dates_item-local">
-                г. Москва, Флотилия "Рэдиссон Ройал" наб. Тараса Шевченко
-              </p>
-            </div>
-            <div className="card-content_dates_item">
-              <span>Свадебное мероприятие</span>
-              <h2>04.08.23</h2>
-              <p className="card-content_dates_item-time">18:00</p>
-              <p className="card-content_dates_item-local">
-                г. Владивосток, ул. Лазурная 23б
-              </p>
-            </div>
-          </div>
-          {/* <div className="card-content_goo">
-          </div> */}
-          <img className="goo" src={goo} alt="goo" />
+        <div className="cardBlock" onClick={() => setFlipp(false)}>
+          <img src={contentMisha} alt="content invite" />
         </div>
       </ReactCardFlip>
       <div
@@ -67,7 +42,93 @@ function App() {
       >
         <div className="spinner"></div>
       </div>
-    </div>
+    </>
+  );
+}
+function DefaultPage() {
+  const [flippedCard, setFlipp] = useState(false);
+  const [checkClick, setCheck] = useState(false);
+  function changeVh() {
+    document.documentElement.style.setProperty(
+      "--vh",
+      `${window.innerHeight}px`
+    );
+  }
+  changeVh();
+  window.addEventListener("resize", changeVh);
+  return (
+    <>
+      <ReactCardFlip isFlipped={flippedCard}>
+        <div
+          className="cardBlock"
+          onClick={() => {
+            setFlipp(true);
+            setCheck(true);
+          }}
+        >
+          <img src={mainPage} alt="title invite" />
+        </div>
+        <div className="cardBlock" onClick={() => setFlipp(false)}>
+          <img src={contentPage} alt="content invite" />
+        </div>
+      </ReactCardFlip>
+      <div
+        className="hint"
+        style={checkClick ? { display: "none" } : { display: "flex" }}
+      >
+        <div className="spinner"></div>
+      </div>
+    </>
+  );
+}
+function DimkaPage() {
+  const [flippedCard, setFlipp] = useState(false);
+  const [checkClick, setCheck] = useState(false);
+  function changeVh() {
+    document.documentElement.style.setProperty(
+      "--vh",
+      `${window.innerHeight}px`
+    );
+  }
+  changeVh();
+  window.addEventListener("resize", changeVh);
+  return (
+    <>
+      <ReactCardFlip isFlipped={flippedCard}>
+        <div
+          className="cardBlock"
+          onClick={() => {
+            setFlipp(true);
+            setCheck(true);
+          }}
+        >
+          <img src={mainDima} alt="title invite" />
+        </div>
+        <div className="cardBlock" onClick={() => setFlipp(false)}>
+          <img src={contentDima} alt="content invite" />
+        </div>
+      </ReactCardFlip>
+      <div
+        className="hint"
+        style={checkClick ? { display: "none" } : { display: "flex" }}
+      >
+        <div className="spinner"></div>
+      </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div className="wrap">
+        <Routes>
+          <Route path="/" element={<DefaultPage />} />
+          <Route path="/special" element={<MishaPage />} />
+          <Route path="/dimka" element={<DimkaPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

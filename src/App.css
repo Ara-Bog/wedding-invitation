@@ -1,9 +1,3 @@
-html {
-  font-size: 220px;
-  line-height: 200px;
-  --top_marg: 200px;
-}
-
 * {
   text-decoration: none;
   outline: none;
@@ -14,414 +8,26 @@ html {
 .wrap {
   display: flex;
   width: 100vw;
-  height: 100vh;
-  background-color: #edd3d3;
+  height: var(--vh, 100vh);
+  background: linear-gradient(45deg, rgba(188, 215, 197, 1) 20%, rgba(165, 216, 237, 1) 80%);
   position: relative;
   justify-content: center;
   overflow: hidden;
 }
 
-.card-main,
-.card-content {
-  max-width: 85.2%;
-  width: 70vh;
-  height: 100%;
-  background-color: #fff;
-  padding: 0 7.4%;
+.cardBlock {
   display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  margin: 0 auto;
-  position: relative;
-}
-
-.react-card-flip {
-  max-width: 100vw;
-}
-
-
-h3 {
-  font-family: 'Cormorant Garamond';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 0.54rem;
-  line-height: 0.725rem;
-  color: #4F72AA;
-  text-align: center;
-}
-
-h1 {
-  font-family: 'Cormorant Garamond';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1rem;
-  letter-spacing: 10px;
-  color: #383838;
-}
-
-.h3_withPadd {
-  margin-top: var(--top_marg);
-}
-
-.card-main_title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: var(--vh, 100vh);
   width: 100%;
-  position: relative;
-  margin-top: var(--top_marg);
 }
 
-.card-main_title span {
-  font-family: 'TT Livret Display Trl';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 0.68rem;
-  line-height: 0.73rem;
-  letter-spacing: 10px;
-  color: #4F72AA80;
-}
-
-.card-main_title span::before,
-.card-main_title span::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 50%;
-  background-color: #4F72AA;
-  border-radius: 63px;
-  -webkit-border-radius: 63px;
-  -moz-border-radius: 63px;
-  -ms-border-radius: 63px;
-  -o-border-radius: 63px;
-  width: 40%;
-  height: 4px;
-  opacity: 0.5;
-}
-
-.card-main_title span::before {
-  left: unset;
-  right: 0;
-}
-
-.card-main_content {
-  display: flex;
-  margin-top: calc(var(--top_marg) * 0.865);
-  margin-right: 30px;
-  margin-bottom: 22px;
+.cardBlock>img {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.card-main_content img {
-  object-fit: contain;
-  max-width: 100%;
-  height: 100%;
-  margin-left: auto;
-}
-
-.card-content {
-  --added_margin: 11.2%;
-  overflow: hidden;
-}
-
-.card-content::after {
-  content: "";
-  --out_marign: calc(var(--top_marg) * 0.235);
-  position: absolute;
-  left: var(--out_marign);
-  right: var(--out_marign);
-  top: var(--out_marign);
-  width: auto;
-  height: calc(100% - var(--out_marign) * 2);
-  pointer-events: none;
-  border: 13px solid #fff;
-  border-image: linear-gradient(0deg, #A6DAD900 0%, #4282C37D 100%);
-  border-image-slice: 1;
-}
-
-.card-content .h3_withPadd {
-  margin-top: calc(var(--top_marg) * 1.63);
-}
-
-.card-content>p {
-  font-family: 'Cormorant Garamond';
-  font-weight: 400;
-  font-size: 0.4rem;
-  line-height: 0.5rem;
-  text-align: center;
-  margin: calc(var(--top_marg) * 0.35) var(--added_margin) 0;
-}
-
-.card-content_wave {
-  max-width: 100%;
-  margin: calc(var(--top_marg) * 0.31) calc(var(--added_margin) * 1.7) 0;
-}
-
-.card-content_dates {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2px;
-  background-color: #b6b6b6;
-  margin-top: calc(var(--top_marg) * 0.65);
-  --margin_between: 69px;
-}
-
-.card-content_dates>div {
-  background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.card-content_dates>div:first-child {
-  padding-right: var(--margin_between);
-}
-
-.card-content_dates>div:last-child {
-  padding-left: var(--margin_between);
-}
-
-.card-content_dates_item span {
-  font-family: 'Cormorant Garamond';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 0.36rem;
-  line-height: 0.45rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #383838;
-  text-align: center;
-}
-
-h2 {
-  font-family: 'TT Livret Display Trl';
-  font-style: italic;
-  font-weight: 600;
-  font-size: 0.59rem;
-  line-height: 0.77rem;
-  letter-spacing: 5px;
-  color: #4F72AA;
-  margin-top: calc(var(--top_marg) * 0.56);
-}
-
-.card-content_dates_item-time {
-  font-family: 'TT Livret Display Trl';
-  font-style: italic;
-  font-weight: 400;
-  font-size: 0.4rem;
-  line-height: 0.535rem;
-  letter-spacing: 6px;
-  color: #898989;
-}
-
-.card-content_dates_item-local {
-  font-family: 'Cormorant Garamond';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.318rem;
-  line-height: 0.36rem;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 2px;
-  color: #6D6D6D;
-  margin-top: calc(var(--top_marg) * 0.4);
-}
-
-.card-content_goo {
-  max-width: 100vw;
+  margin-top: auto;
+  margin-bottom: auto;
   max-height: 100%;
-  margin: 69px -8.4% 0;
-  overflow: hidden;
-  display: flex;
-  position: relative;
-}
-
-.goo {
-  display: flex;
-  object-fit: cover;
-  width: 156.8%;
-  margin: 69px -8.4% 0;
-}
-
-@media (max-width:2000px) {
-  html {
-    font-size: 70px;
-    line-height: 50px;
-    --top_marg: 50px;
-  }
-
-  .card-content::after {
-    border-width: 8px;
-  }
-}
-
-@media (max-height:1024px) {
-  .goo {
-    margin-top: 30px;
-    margin-left: -30%;
-    width: 158%;
-  }
-}
-
-@media (max-height:900px) {
-  html {
-    font-size: 40px;
-    line-height: 20px;
-    --top_marg: 30px;
-  }
-
-  .card-main_title span::before,
-  .card-main_title span::after {
-    height: 2px;
-  }
-
-  .card-content::after {
-    border-width: 4px;
-  }
-}
-
-@media (max-height:600px) {
-  html {
-    font-size: 40px;
-    line-height: 20px;
-    --top_marg: 30px;
-  }
-
-  .card-main_title span::before,
-  .card-main_title span::after {
-    height: 2px;
-  }
-
-  .card-content::after {
-    border-width: 4px;
-  }
-
-  .card-main_title span::before,
-  .card-main_title span::after {
-    height: 1px;
-  }
-
-  .card-content::after {
-    border-width: 2px;
-  }
-
-  .card-content_dates {
-    grid-template-columns: none;
-    --margin_between: 30px;
-  }
-
-  .card-content_dates>div:first-child {
-    padding-right: 0;
-    padding-bottom: var(--margin_between);
-  }
-
-  .card-content_dates>div:last-child {
-    padding-left: 0;
-    padding-top: var(--margin_between);
-  }
-
-  .goo {
-    margin-top: 20px;
-    margin-left: -30%;
-  }
-}
-
-@media (max-width:800px) {
-  html {
-    font-size: 45px;
-    line-height: 30px;
-    --top_marg: 70px;
-  }
-
-  .card-main_title span::before,
-  .card-main_title span::after {
-    height: 2px;
-  }
-
-  .card-content::after {
-    border-width: 4px;
-  }
-
-  .card-content_dates {
-    --margin_between: 20px;
-  }
-
-  .card-content>p {
-    font-size: 0.5rem;
-    line-height: 0.6rem;
-  }
-
-  .card-content::after {
-    --out_marign: 10px;
-  }
-}
-
-@media (max-width:600px) {
-  html {
-    font-size: 45px;
-    line-height: 45px;
-    --top_marg: 30px;
-  }
-
-  .card-content {
-    --top_marg: 40px;
-  }
-
-  .card-main_title span::before,
-  .card-main_title span::after {
-    height: 1px;
-  }
-
-  .card-content::after {
-    border-width: 2px;
-  }
-
-  .card-content_dates {
-    grid-template-columns: none;
-    --margin_between: 30px;
-  }
-
-  .card-content_dates>div:first-child {
-    padding-right: 0;
-    padding-bottom: var(--margin_between);
-  }
-
-  .card-content_dates>div:last-child {
-    padding-left: 0;
-    padding-top: var(--margin_between);
-  }
-
-  .card-content_dates_item-time {
-    font-size: 0.5rem;
-    line-height: 0.635rem;
-  }
-
-  .card-content_dates_item-local {
-    font-size: 0.418rem;
-    line-height: 0.46rem;
-  }
-
-  .goo {
-    margin-top: 20px;
-    margin-left: -30%;
-  }
-}
-
-@media (max-width:500px) {
-  html {
-    font-size: 35px;
-    line-height: 35px;
-    --top_marg: 20px;
-  }
-
-  .card-main_title span::before,
-  .card-main_title span::after {
-    height: 1px;
-  }
+  object-fit: contain;
+  margin-top: auto;
 }
 
 /* подсказка */
@@ -429,16 +35,18 @@ h2 {
   position: absolute;
   top: 50%;
   pointer-events: none;
+  counter-reset: spinner;
 }
 
-.spinner {
-  width: 80px;
-  height: 80px;
-  background-color: rgb(146, 145, 145);
+.hint>div {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(0, 65, 62);
   border-radius: 100%;
   -webkit-animation: scaleout 1s infinite ease-in-out;
   animation: scaleout 1s infinite ease-in-out;
 }
+
 
 @-webkit-keyframes scaleout {
   0% {
