@@ -7,7 +7,7 @@ import contentMisha from "./img/contentMisha.jpg";
 import "./App.css";
 import { useState } from "react";
 import ReactCardFlip from "react-card-flip";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 
 function MishaPage() {
   const [flippedCard, setFlipp] = useState(false);
@@ -119,15 +119,15 @@ function DimkaPage() {
 }
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="wrap">
         <Routes>
-          <Route path="wedding-invitation/" index element={<DefaultPage />} />
-          <Route path="wedding-invitation/special" element={<MishaPage />} />
-          <Route path="wedding-invitation/dimka" element={<DimkaPage />} />
+          <Route path="/" index element={<DefaultPage />} />
+          <Route path="/special" element={<MishaPage />} />
+          <Route path="/dimka" element={<DimkaPage />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
