@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/wedding-invitation/static/css/main.99322f7d.css",
-    "main.js": "/wedding-invitation/static/js/main.e866c453.js",
+    "main.css": "/wedding-invitation/static/css/main.ca538494.css",
+    "main.js": "/wedding-invitation/static/js/main.878ea26b.js",
     "static/js/787.2577c28c.chunk.js": "/wedding-invitation/static/js/787.2577c28c.chunk.js",
+    "static/media/goo.png": "/wedding-invitation/static/media/goo.f887fe7b8e6b860ccf74.png",
     "static/media/lighthouse.png": "/wedding-invitation/static/media/lighthouse.2c0f476f51288e96444a.png",
     "static/media/CormorantGaramond-SemiBold.woff": "/wedding-invitation/static/media/CormorantGaramond-SemiBold.20d3890ba2ac5012f218.woff",
     "static/media/CormorantGaramond-Medium.woff": "/wedding-invitation/static/media/CormorantGaramond-Medium.d555d5a276903cbd71f1.woff",
@@ -14,6 +15,7 @@
     "static/media/CormorantGaramond-Italic.woff": "/wedding-invitation/static/media/CormorantGaramond-Italic.0609d16c2bb62a8fa8b2.woff",
     "static/media/CormorantGaramond-LightItalic.woff": "/wedding-invitation/static/media/CormorantGaramond-LightItalic.a404ae2e647c42ae2ca1.woff",
     "static/media/CormorantGaramond-BoldItalic.woff": "/wedding-invitation/static/media/CormorantGaramond-BoldItalic.971830fd537d8eed5474.woff",
+    "static/media/wave.png": "/wedding-invitation/static/media/wave.a7d458c49ba39aa2cb3d.png",
     "static/media/CormorantGaramond-Medium.woff2": "/wedding-invitation/static/media/CormorantGaramond-Medium.470d168387b65a1a3397.woff2",
     "static/media/CormorantGaramond-SemiBold.woff2": "/wedding-invitation/static/media/CormorantGaramond-SemiBold.6c1960e2626f6c16a522.woff2",
     "static/media/CormorantGaramond-Regular.woff2": "/wedding-invitation/static/media/CormorantGaramond-Regular.4ca82207d3e330c5625a.woff2",
@@ -45,12 +47,12 @@
     "static/media/TTLivretDisplayTrl-Bd.woff2": "/wedding-invitation/static/media/TTLivretDisplayTrl-Bd.46d93448e3ee4cd2e47d.woff2",
     "static/media/TTLivretDisplayTrl-Lt.woff2": "/wedding-invitation/static/media/TTLivretDisplayTrl-Lt.3a9f8e8e3fc8d9af6bbd.woff2",
     "index.html": "/wedding-invitation/index.html",
-    "main.99322f7d.css.map": "/wedding-invitation/static/css/main.99322f7d.css.map",
-    "main.e866c453.js.map": "/wedding-invitation/static/js/main.e866c453.js.map",
+    "main.ca538494.css.map": "/wedding-invitation/static/css/main.ca538494.css.map",
+    "main.878ea26b.js.map": "/wedding-invitation/static/js/main.878ea26b.js.map",
     "787.2577c28c.chunk.js.map": "/wedding-invitation/static/js/787.2577c28c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.99322f7d.css",
-    "static/js/main.e866c453.js"
+    "static/css/main.ca538494.css",
+    "static/js/main.878ea26b.js"
   ]
 }
