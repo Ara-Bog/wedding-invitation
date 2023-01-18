@@ -117,15 +117,14 @@ function DimkaPage() {
     </>
   );
 }
-
 function App() {
   return (
     <BrowserRouter>
       <div className="wrap">
         <Routes>
-          <Route path="/" element={<DefaultPage />} />
-          <Route path="/special" element={<MishaPage />} />
-          <Route path="/dimka" element={<DimkaPage />} />
+          <Route path="wedding-invitation/" index element={<DefaultPage />} />
+          <Route path="wedding-invitation/special" element={<MishaPage />} />
+          <Route path="wedding-invitation/dimka" element={<DimkaPage />} />
         </Routes>
       </div>
     </BrowserRouter>
